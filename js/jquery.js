@@ -1,6 +1,6 @@
 $(function(){
     
-    var count = 0;
+    var count = -1;
     var timer;
     var barlength = $('.bar').length;
     
@@ -25,7 +25,7 @@ $(function(){
     
     function starttimer(){
         timer = setInterval(function(){
-            var nextindex = (count+1) % barlength-1; 
+            var nextindex = (count+1) % barlength; 
             move(nextindex);
         }, 2000);
     }
