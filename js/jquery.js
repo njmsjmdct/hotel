@@ -25,7 +25,7 @@ $(function(){
     
     function starttimer(){
         timer = setInterval(function(){
-            var nextindex = (count+1) % barlength; 
+            var nextindex = (count+1) % barlength-1; 
             move(nextindex);
         }, 2000);
     }
